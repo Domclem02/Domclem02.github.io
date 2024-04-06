@@ -1,3 +1,5 @@
-function changeText() {
- document.querySelector('p').textContent = 'Text changed!';
-}
+// script.js
+document.getElementById("redirectButton").addEventListener("click", function() {
+    // Replace 'https://example.com' with the URL you want to redirect to
+    window.location.href = 'https://www.nytimes.com/games/wordle/index.html';
+});
