@@ -8,13 +8,13 @@ h1 {
 p {
  font-size: 18px;
 }
-button {
+a {
  background-color: green;
  color: white;
  border: none;
  padding: 10px 20px;
  cursor: pointer;
 }
-button:hover {
+a:hover {
  background-color: darkgreen;
 }
