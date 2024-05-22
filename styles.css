@@ -19,6 +19,7 @@ p {
  border: none;
  padding: 10px 20px;
  cursor: pointer;
+ text-decoration: none;
 }
 .button:hover {
  background-color: darkgreen;
