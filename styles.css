@@ -1,10 +1,5 @@
-@font-face {
-    font-family: allPKeyboard;
-    src: url(PKeyboardGameChanger.ttf);
-}
-
 body {
- font-family: allPKeyboard;
+ font-family: 'Times New Roman', Times, serif;
  background-color: #677d85;
 }
 h1 {
