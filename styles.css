@@ -8,14 +8,52 @@ h1 {
 p {
  font-size: 18px;
 }
-.button {
- background-color: green;
- color: white;
- border: none;
- padding: 10px 20px;
- cursor: pointer;
- text-decoration: none;
+
+h1 {
+    color: white;
+    font-family: "Papyrus MS", "Papyrus", cursive;
 }
-.button:hover {
- background-color: darkgreen;
+.other {
+    background-color: #af0022;
+    padding: 10px;
+}
+.header {
+    text-decoration: none;
+}
+.button {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: #af0022;
+}
+th:hover {
+    background-color: #95000a;
+    animation: antirotation 0.000001s infinite linear;
+}
+.squirtle{
+    animation: rotation 900s infinite linear;
+}
+.Main-page {
+    float: right;
+    color: white;
+    text-decoration: none;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: #af0022;
+    padding: 10px;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+@keyframes antirotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-359deg);
+    }
 }
