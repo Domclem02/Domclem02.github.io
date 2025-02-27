@@ -28,7 +28,6 @@ h1 {
 }
 th:hover {
     background-color: #95000a;
-    animation: antirotation 0.000001s infinite linear;
 }
 .squirtle{
     animation: rotation 900s infinite linear;
@@ -49,11 +48,59 @@ th:hover {
         transform: rotate(359deg);
     }
 }
-@keyframes antirotation {
-    from {
-        transform: rotate(0deg);
+/* Basic Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Mobile View (max-width: 768px for tablets and smaller screens) */
+@media (max-width: 768px) {
+    /* Display table rows as block elements on mobile */
+    table, thead, tbody, th, td, tr {
+        display: block;
     }
-    to {
-        transform: rotate(-359deg);
+
+    /* Hide the table headers on mobile */
+    th {
+        display: block;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+
+    /* Adjust the layout to show 2 columns */
+    td:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+
+    td:nth-child(even) {
+        background-color: #fff;
     }
 }
