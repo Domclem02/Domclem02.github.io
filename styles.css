@@ -1,106 +1,69 @@
 body {
- font-family: 'Times New Roman', Times, serif;
  background-color: #677d85;
 }
+.container{
+    display: grid;
+    background-color: black;
+    grid-template-columns: auto auto auto auto;
+    gap: 1px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
 h1 {
- color: blue;
+ color: white;
+ text-align: center;
 }
 p {
  font-size: 18px;
+ color: white;
 }
 
-h1 {
-    color: white;
-    font-family: "Papyrus MS", "Papyrus", cursive;
-}
-.other {
-    background-color: #af0022;
-    padding: 10px;
-}
-.header {
-    text-decoration: none;
-}
 .button {
     color: white;
+    padding: 10px;
     text-decoration: none;
+    font-size: 12pt;
     font-family: sans-serif;
+    font-weight: bold;
     background-color: #af0022;
+    text-align: center;
 }
-th:hover {
+a{
+    text-decoration: none;
+}
+a.button:hover {
     background-color: #95000a;
+    animation: rotation .5s infinite linear;
 }
 .squirtle{
+    padding-top: 7%;
+    display: block;
+    margin: auto;
+    width: 15%;
     animation: rotation 900s infinite linear;
 }
-.Main-page {
-    float: right;
-    color: white;
-    text-decoration: none;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    background-color: #af0022;
-    padding: 10px;
+
+@media only screen and (max-width: 600px){
+    .container{
+    display: grid;
+    background-color: black;
+    grid-template-columns: auto auto;
+    gap: 1px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
 }
+img {
+    width: 50%;
+}
+}
+
 @keyframes rotation {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(359deg);
-    }
-}
-/* Basic Table Styling */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-/* Mobile View (max-width: 768px for tablets and smaller screens) */
-@media (max-width: 1300px) {
-    /* Display table rows as block elements on mobile */
-    table, thead, tbody, th, td, tr {
-        display: block;
-    }
-
-    /* Hide the table headers on mobile */
-    th {
-        display: block;
-    }
-
-    tr {
-        margin-bottom: 15px;
-    }
-
-    td {
-        display: flex;
-        justify-content: space-between;
-        padding-left: 50%;
-        position: relative;
-    }
-
-    td::before {
-        content: attr(data-label);
-        position: absolute;
-        left: 10px;
-        font-weight: bold;
-    }
-
-    /* Adjust the layout to show 2 columns */
-    td:nth-child(odd) {
-        background-color: #f9f9f9;
-    }
-
-    td:nth-child(even) {
-        background-color: #fff;
     }
 }
