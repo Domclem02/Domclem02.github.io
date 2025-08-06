@@ -34,7 +34,6 @@ a{
 }
 a.button:hover {
     background-color: #95000a;
-    animation: rotation .5s infinite linear;
 }
 .squirtle{
     padding-top: 7%;
